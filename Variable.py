@@ -24,3 +24,11 @@ height = 250.5
 print(height)
 print(type(height))
 print("Your height is: " + str(height) +"cm")
+
+
+#boolean, true or false
+human = True
+print(human)
+print(type(human))
+print("Are you a human: "+str(human))
+
