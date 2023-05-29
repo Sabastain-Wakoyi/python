@@ -15,13 +15,13 @@
 
 # variable is a container for values in programming which are used to hold values of text, images or videos
 #Ask user for their name
-name = input("what's your name? ")
+# name = input("what's your name? ")
 
 #Say hello to user
 # print("Hello")
 # print(name)
 #print("Hello, " + name) # this is one function
-print("Hello,", name) # this takes multiple arguments
+# print("Hello,", name) # this takes multiple arguments
 
 #comments are notes for the programmer or other programmers
 #Comments can form a to do list for you
@@ -40,7 +40,14 @@ print("Hello,", name) # this takes multiple arguments
 #arguments are the values that are passed to a function or method when it is called or invoke.
 #functions take arguments which implement their behaviours
 
-name = input("What's your name? ")
-print("hello, ", end="")
-print(name)
-print("hello,", name, sep="???")
+# name = input("What's your name? ")
+# print("hello, ", end="")
+# print(name)
+# print("hello,", name, sep="???")
+
+#final solution for the above problem
+# Ask user for their name
+name = input("what's your name")
+
+#say hello to user
+print(f"hello,{name}")
