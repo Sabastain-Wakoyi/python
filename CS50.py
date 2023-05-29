@@ -13,13 +13,34 @@
 # print("Hello, David")
 #return values are the values you get back from your variable
 
-# variable is a container for values in programming which are used to hold values ofntext, images or videos
+# variable is a container for values in programming which are used to hold values of text, images or videos
 #Ask user for their name
 name = input("what's your name? ")
 
 #Say hello to user
-print("Hello")
-print(name)
+# print("Hello")
+# print(name)
+#print("Hello, " + name) # this is one function
+print("Hello,", name) # this takes multiple arguments
+
 #comments are notes for the programmer or other programmers
 #Comments can form a to do list for you
 #pesudocode allows you to outline your program  algorithmatically or logically
+
+#str is short form of string. It's use in converting integres to strings
+#docs.python.org, official python documentation
+#print(*objects, sep=' ', end='\n', file=None, flush=False)
+#*objects means the function can take any number of arguments
+#sep='', sep means separator
+#end='\n', the \n tells the computer to move to a new line
+
+
+#parameters are variables or placeholders defined in the function or method declaration
+# that represent the values or data that a function expects to receive when it is called or invoked
+#arguments are the values that are passed to a function or method when it is called or invoke.
+#functions take arguments which implement their behaviours
+
+name = input("What's your name? ")
+print("hello, ", end="")
+print(name)
+print("hello,", name, sep="???")
