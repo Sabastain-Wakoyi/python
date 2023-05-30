@@ -47,7 +47,16 @@
 
 #final solution for the above problem
 # Ask user for their name
-name = input("what's your name")
+name = input("what's your name").strip().title()
+
+#Remove whitespace from str and capitalize user's name
+# name = name.strip().title()
+
+#Capitilize user's name
+# name = name.capitalize()
+
+#capitalize the first letters of the word
+# name = name.title()
 
 #say hello to user
-print(f"hello,{name}")
+print(f"hello, {name}")
