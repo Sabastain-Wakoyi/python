@@ -52,11 +52,14 @@ name = input("what's your name").strip().title()
 #Remove whitespace from str and capitalize user's name
 # name = name.strip().title()
 
-#Capitilize user's name
+#Capitilize user's first name and leaves second name in lower case
 # name = name.capitalize()
 
-#capitalize the first letters of the word
+#capitalize the first letters of the word both first name and second name.
 # name = name.title()
 
+#split user's name into first name and last name
+# first, last = name.split(" ")
+# print(f"hello, {first}")
 #say hello to user
 print(f"hello, {name}")
