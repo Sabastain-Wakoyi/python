@@ -17,7 +17,16 @@
 #round, rounds the number up to the nearest integer
 #round(number[, ndigits])
 
+# x = float(input("what's x?"))
+# y = float(input("what's y?"))
+# z = round(x + y)
+# print(f"{z:,}") # :, output a value separated by the , (command)
+
+
 x = float(input("what's x?"))
 y = float(input("what's y?"))
-z = round(x + y)
-print(f"{z:,}") # :, output a value separated by the , (command)
+# z = round(x/y, 2) # rounds the answer to two decimal places
+# print(z)
+
+z = x/y
+print(f"{z:.2f}") # rounds the answer to two decimal places as well
