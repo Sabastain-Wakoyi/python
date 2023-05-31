@@ -139,17 +139,53 @@
 
 
 
-def main():
-    x = int(input("what's x? "))
-    if is_even(x):
-        print("Even")
-    else:
-        print("odd")
+# def main():
+#     x = int(input("what's x? "))
+#     if is_even(x):
+#         print("Even")
+#     else:
+#         print("odd")
+#
+# def is_even(n):
+#     if n % 2 == 0:
+#         return True
+#     else:
+#         return False
+#
+# main()
 
-def is_even(n):
-    if n % 2 == 0:
-        return True
-    else:
-        return False
+#simplified way of solving the above problem
+# def main():
+#     x = int(input("what's x? "))
+#     if is_even(x):
+#         print("Even")
+#     else:
+#         print("odd")
+#
+# def is_even(n):
+#         #return True if n % 2 == 0 else False
+#         return n % 2 == 0
+#
+# main()
 
-main()
+
+#match
+
+# name = input("what's your name? ")
+# if name == "Harry":
+#     print("Gry")
+# elif name == "Hermione":
+#     print("Gry")
+# elif name == "Draco":
+#     print("Sly")
+# else:
+#     print("Who? ")
+
+#simplified version of the above
+name = input("what's your name? ")
+if name == "Harry" or name == "Hermione" or name == "Ron":
+    print("Gry")
+elif name == "Draco":
+    print("Sly")
+else:
+    print("Who? ")
