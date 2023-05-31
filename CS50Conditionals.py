@@ -182,10 +182,24 @@
 #     print("Who? ")
 
 #simplified version of the above
+# name = input("what's your name? ")
+# if name == "Harry" or name == "Hermione" or name == "Ron":
+#     print("Gry")
+# elif name == "Draco":
+#     print("Sly")
+# else:
+#     print("Who? ")
+
+
+#using the keyword match
 name = input("what's your name? ")
-if name == "Harry" or name == "Hermione" or name == "Ron":
-    print("Gry")
-elif name == "Draco":
-    print("Sly")
-else:
-    print("Who? ")
+
+match name:
+    case "Harry":
+        print("Gry")
+    case "Hermione":
+        print("Gry")
+    case "Ron":
+        print("Gry")
+    case "Draco":
+        print("Sly")
