@@ -192,14 +192,24 @@
 
 
 #using the keyword match
+#python 3.8 does not support match
 name = input("what's your name? ")
 
+#match name:
+    # case "Harry":
+    #     print("Gry")
+    # case "Hermione":
+    #     print("Gry")
+    # case "Ron":
+    #     print("Gry")
+    # case "Draco":
+    #     print("Sly")
+
 match name:
-    case "Harry":
-        print("Gry")
-    case "Hermione":
-        print("Gry")
-    case "Ron":
-        print("Gry")
+    case "Harry" | "Her" | "Ron":
+                print("Gry")
     case "Draco":
         print("Sly")
+    case _:
+        print("Who")
+
