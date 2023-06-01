@@ -182,18 +182,18 @@
 #     print("Who? ")
 
 #simplified version of the above
-# name = input("what's your name? ")
-# if name == "Harry" or name == "Hermione" or name == "Ron":
-#     print("Gry")
-# elif name == "Draco":
-#     print("Sly")
-# else:
-#     print("Who? ")
+name = input("what's your name? ")
+if name == "Harry" or name == "Hermione" or name == "Ron":
+    print("Gry")
+elif name == "Draco":
+    print("Sly")
+else:
+    print("Who? ")
 
 
 #using the keyword match
 #python 3.8 does not support match
-name = input("what's your name? ")
+# name = input("what's your name? ")
 
 #match name:
     # case "Harry":
@@ -204,12 +204,12 @@ name = input("what's your name? ")
     #     print("Gry")
     # case "Draco":
     #     print("Sly")
-
-match name:
-    case "Harry" | "Her" | "Ron":
-                print("Gry")
-    case "Draco":
-        print("Sly")
-    case _:
-        print("Who")
+#
+# match name:
+#     case "Harry" | "Her" | "Ron":
+#                 print("Gry")
+#     case "Draco":
+#         print("Sly")
+#     case _:
+#         print("Who")
 
