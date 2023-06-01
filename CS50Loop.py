@@ -68,5 +68,10 @@ students = ["Her", "Har", "Ron"]
 # print(students[1])
 # print(students[2])
 
-for student in students:
-    print(student)
+# for student in students:
+#     print(student)
+
+
+# len in python tells you the length of a list
+for i in range (len(students)):
+    print(i + 1, students[i])
