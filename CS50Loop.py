@@ -24,15 +24,15 @@
 #     print("meow")
 
 #range is a function in python
-for i in range(3):
-    print("meow")
+# for i in range(3):
+#     print("meow")
 
 
 # use _ (under score) when you don't care about a variable blc, it will not be used in the programme
-for _ in range(3):
-    print("meow")
+# for _ in range(3):
+#     print("meow")
 
-print("meow\n" * 3, end="") #end="" eliminates the extra line at the end of output
+# print("meow\n" * 3, end="") #end="" eliminates the extra line at the end of output
 
 
 while True:
