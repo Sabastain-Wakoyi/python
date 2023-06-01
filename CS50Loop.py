@@ -43,22 +43,27 @@
 # for _ in range (n):
 #     print("meow")
 
-def main():
-    number = get_number()
-    meow(number)
+# def main():
+#     number = get_number()
+#     meow(number)
+#
+# def get_number():
+#     while True:
+#         n = int(input("what's n? "))
+#         if n > 0:
+#             break
+#
+#         return n
+#
+#
+# def meow(n):
+#     for _ in range(n):
+#         print("meow")
+#
+# main()
 
-def get_number():
-    while True:
-        n = int(input("what's n? "))
-        if n > 0:
-            break
+students = ["Her", "Har", "Ron"]
 
-        return n
-
-
-def meow(n):
-    for _ in range(n):
-        print("meow")
-
-main()
-
+print(students[0])
+print(students[1])
+print(students[2])
