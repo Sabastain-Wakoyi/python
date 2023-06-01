@@ -33,3 +33,14 @@ for _ in range(3):
     print("meow")
 
 print("meow\n" * 3, end="") #end="" eliminates the extra line at the end of output
+
+
+while True:
+    n = int(input("what's n?"))
+    if n > 0:
+        break
+
+for _ in range (n):
+    print("meow")
+
+
