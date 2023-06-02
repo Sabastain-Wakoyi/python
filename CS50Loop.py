@@ -96,8 +96,11 @@
 #     print(student, students[student], sep=", ")
 
 students = [
-    {"name": "Nfor", "house": "Ndu", "tilte": "Shufai"},
-    {"name": "Ngala", "houes": "Kungi", "title": "Nji"},
-    {"name": "Shey", "houes": "Nkambe", "title": "Nwabeh"},
-    {"name": "Serkwi", "houes": "Binju", "title": None}
+    {"name": "Nfor", "house": "Ndu", "title": "Shufai"},
+    {"name": "Ngala", "house": "Kungi", "title": "Nji"},
+    {"name": "Shey", "house": "Nkambe", "title": "Nwabeh"},
+    {"name": "Serkwi", "house": "Binju", "title": None}
 ]
+
+for student in students:
+    print(student["name"], student["house"], student["title"], sep=", ")
