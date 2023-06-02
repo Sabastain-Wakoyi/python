@@ -80,4 +80,14 @@
 
 # dict, stands for dictionary is associated with others , keys and values
 
-students = {"Mbe": "Ako", "Edu": "Ako", "Wako": "Ako", "Suh": "Berabe"}
+students = {
+    "Mbe": "Ako",
+    "Edu": "Ako",
+    "Wako": "Ako",
+    "Suh": "Berabe"
+}
+
+print(students["Mbe"])
+print(students["Edu"])
+print(students["Wako"])
+print(students["Suh"])
