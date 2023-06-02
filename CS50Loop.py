@@ -95,12 +95,19 @@
 # for student in students:
 #     print(student, students[student], sep=", ")
 
-students = [
-    {"name": "Nfor", "house": "Ndu", "title": "Shufai"},
-    {"name": "Ngala", "house": "Kungi", "title": "Nji"},
-    {"name": "Shey", "house": "Nkambe", "title": "Nwabeh"},
-    {"name": "Serkwi", "house": "Binju", "title": None}
-]
+#[] indicate a list, {} indicate a dictionary
+# students = [
+#     {"name": "Nfor", "house": "Ndu", "title": "Shufai"},
+#     {"name": "Ngala", "house": "Kungi", "title": "Nji"},
+#     {"name": "Shey", "house": "Nkambe", "title": "Nwabeh"},
+#     {"name": "Serkwi", "house": "Binju", "title": None}
+# ]
+#
+# for student in students:
+#     print(student["name"], student["house"], student["title"], sep=", ")
 
-for student in students:
-    print(student["name"], student["house"], student["title"], sep=", ")
+
+
+
+for _ in range(3):
+        print("#")
