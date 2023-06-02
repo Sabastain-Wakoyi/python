@@ -22,11 +22,15 @@ def main():
 def get_int():
     while True:
         try:
-            x = int(input("What's x? "))
+            return int(input("what's x? "))
+          #  x = int(input("What's x? "))
 
         except ValueError:
             print("x is not an integer")
 
-        else:
-            break
-    return x
+        #else:
+           # return x
+            #break
+    # return x
+
+main()
