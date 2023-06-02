@@ -80,17 +80,23 @@
 
 # dict, stands for dictionary is associated with others , keys and values
 
-students = {
-    "Mbe": "Ako",
-    "Edu": "Ako",
-    "Wako": "Ako",
-    "Suh": "Berabe"
-}
+# students = {
+#     "Mbe": "Ako",
+#     "Edu": "Ako",
+#     "Wako": "Ako",
+#     "Suh": "Berabe"
+# }
 
 # print(students["Mbe"])
 # print(students["Edu"])
 # print(students["Wako"])
 # print(students["Suh"])
 
-for student in students:
-    print(student, students[student], sep=", ")
+# for student in students:
+#     print(student, students[student], sep=", ")
+
+students = [
+    {"name": "Nfor", "house": "Ndu", "tilte": "Shufai"},
+    {"name": "Ngala", "houes": "Kungi", "title": "Nji"},
+    {"name": "Shey", "houes": "Nkambe", "title": "Nwabeh"}
+]
