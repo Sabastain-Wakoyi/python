@@ -14,16 +14,19 @@
 # or a function name that hasn't been defined or is not accessible within the current scope.
 # It means that Python cannot find the reference to the name you are trying to use.
 
-
-while True:
-    try:
-        x = int(input("what's x? "))
-
-    except ValueError:
-        print("x is not an integer")
-
-    else:
-        break
+def main():
+    x = get_int()
+    print(f"x is {x}")
 
 
-print(f"x is {x}")
+def get_int():
+    while True:
+        try:
+            x = int(input("What's x? "))
+
+        except ValueError:
+            print("x is not an integer")
+
+        else:
+            break
+    return x

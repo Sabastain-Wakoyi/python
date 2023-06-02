@@ -114,15 +114,12 @@ def main():
 #for each row in square
 def print_square(size):
         for i in range(size):
-                print_row(size)
-
-def print_row(width):
-    print("#" * width)
+                print(size)
                 #for each brick in row
                 # for j in range(size):
                         #print brick
                         # print("#", end="")
-                # print()
+                print()
 
 #         print_row(4)
 # def print_row(width):
