@@ -108,6 +108,10 @@
 
 
 
+def main():
+        print_column(3)
 
-for _ in range(3):
-        print("#")
+def print_column(height):
+        print("#\n" * height, end="")
+
+main()
