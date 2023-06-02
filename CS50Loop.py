@@ -87,7 +87,10 @@ students = {
     "Suh": "Berabe"
 }
 
-print(students["Mbe"])
-print(students["Edu"])
-print(students["Wako"])
-print(students["Suh"])
+# print(students["Mbe"])
+# print(students["Edu"])
+# print(students["Wako"])
+# print(students["Suh"])
+
+for student in students:
+    print(student, students[student], sep=", ")
