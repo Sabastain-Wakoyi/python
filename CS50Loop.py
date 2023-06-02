@@ -98,5 +98,6 @@
 students = [
     {"name": "Nfor", "house": "Ndu", "tilte": "Shufai"},
     {"name": "Ngala", "houes": "Kungi", "title": "Nji"},
-    {"name": "Shey", "houes": "Nkambe", "title": "Nwabeh"}
+    {"name": "Shey", "houes": "Nkambe", "title": "Nwabeh"},
+    {"name": "Serkwi", "houes": "Binju", "title": None}
 ]
