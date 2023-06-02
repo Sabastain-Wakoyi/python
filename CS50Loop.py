@@ -62,7 +62,7 @@
 #
 # main()
 
-students = ["Her", "Har", "Ron"]
+# students = ["Her", "Har", "Ron"]
 
 # print(students[0])
 # print(students[1])
@@ -73,5 +73,11 @@ students = ["Her", "Har", "Ron"]
 
 
 # len in python tells you the length of a list
-for i in range (len(students)):
-    print(i + 1, students[i])
+# for i in range (len(students)):
+#     print(i + 1, students[i])
+
+
+
+# dict, stands for dictionary is associated with others , keys and values
+
+students = {"Mbe": "Ako", "Edu": "Ako", "Wako": "Ako", "Suh": "Berabe"}
