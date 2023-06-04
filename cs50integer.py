@@ -30,3 +30,9 @@ y = float(input("what's y?"))
 
 z = x/y
 print(f"{z:.2f}") # rounds the answer to two decimal places as well
+
+# four data type in Python
+# 1. Variable
+# 2. Integer
+# 3. Float
+# 4. Boolean
