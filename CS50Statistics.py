@@ -16,6 +16,7 @@ import sys
 
 
 #check for errors
+#sys.exit, exit at the line it's implemented
 if len(sys.argv) < 2:
     sys.exit("Too few arguments")
 elif len(sys.argv) > 2:
