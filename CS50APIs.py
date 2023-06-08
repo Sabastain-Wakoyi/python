@@ -8,6 +8,9 @@
 # response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1])
 # print(response.json())
 
+
+
+
 import json
 import requests
 import sys
@@ -21,13 +24,26 @@ response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&ter
 print(json.dumps(response.json(), indent=2))
 
 #docs.python.org/3/llibrary/json.html
-import json
-import sys
-import requests
+# import json
+# import sys
+# import requests
+#
+# if len(sys.argv) > 1:
+#     response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1])
+#     # Rest of your code here
+#     print(json.dumps(response.json(), indent=2))
+# else:
+#     print("Please provide a command-line argument.")
 
-if len(sys.argv) > 1:
-    response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + sys.argv[1])
-    # Rest of your code here
-    print(json.dumps(response.json(), indent=2))
-else:
-    print("Please provide a command-line argument.")
+# another way of solving the problem above
+
+import json
+import requests
+import sys
+
+name = "your_music_name"
+if not name:
+    sys.exit()
+
+response = requests.get("https://itunes.apple.com/search?entity=song&limit=1&term=" + name)
+print(json.dumps(response.json(), indent=2))
