@@ -19,7 +19,10 @@ import sys
 #sys.exit, exit at the line it's implemented
 if len(sys.argv) < 2:
     sys.exit("Too few arguments")
-elif len(sys.argv) > 2:
-    sys.exit("Too many arguments")
+# elif len(sys.argv) > 2:
+#     sys.exit("Too many arguments")
 #print name tags
-print("hello, my name is", sys.argv[1])
+#slice, it's a subset of a list
+for arg in sys.argv[1: ]:
+    print("hello, my name is", sys.argv[1])
+
