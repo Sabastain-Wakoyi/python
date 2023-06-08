@@ -16,13 +16,27 @@ import sys
 
 
 #check for errors
-#sys.exit, exit at the line it's implemented
-if len(sys.argv) < 2:
-    sys.exit("Too few arguments")
+# #sys.exit, exit at the line it's implemented
+# if len(sys.argv) < 2:
+#     sys.exit("Too few arguments")
 # elif len(sys.argv) > 2:
 #     sys.exit("Too many arguments")
 #print name tags
 #slice, it's a subset of a list
-for arg in sys.argv[1: ]:
-    print("hello, my name is", sys.argv[1])
+# for arg in sys.argv[1: ]:
+#     print("hello, my name is", sys.argv[1])
+
+
+
+import sys
+
+
+name = input("Enter a name: ")
+
+if len(sys.argv) < 2:
+    sys.exit("Too few arguments")
+
+for arg in sys.argv[1:]:
+    print("hello, my name is", name)
+
 
