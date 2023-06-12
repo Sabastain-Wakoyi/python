@@ -65,8 +65,8 @@ import random
 
 
 def generateQuestion():
-    num1 = random.randint(1, 20)
-    num2 = random.randint(1, 20)
+    num1 = random.randint(1, 15)
+    num2 = random.randint(1, 15)
     operator = random.choice(['+', '-'])
 
     if operator == '+':
@@ -94,11 +94,11 @@ def numberGradeToLetterGrade(grade):
         return 'E'
 
 
-def runMathQuiz():
+def runAiQuiz():
     score = 0
     question_list = []
 
-    print("Welcome to the Math Quiz!")
+    print("Welcome to AI By Dr Tony")
 
     for i in range(5):
         question, answer = generateQuestion()
@@ -117,7 +117,7 @@ def runMathQuiz():
 
     grade = numberGradeToLetterGrade((score / 50) * 100)
 
-    print("\nNumber of correct questions:", score // 5)
+    print("\nNumber of correct questions:", score // 50)
     print("Grade:", grade)
 
     print("\nAll Questions")
@@ -125,7 +125,7 @@ def runMathQuiz():
         print(question)
 
 
-runMathQuiz()
+runAiQuiz()
 
 
 
