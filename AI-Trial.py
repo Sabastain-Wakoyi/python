@@ -63,7 +63,7 @@
 
 import random
 
-
+#function to generate random questions
 def generateQuestion():
     num1 = random.randint(1, 15)
     num2 = random.randint(1, 15)
@@ -72,7 +72,7 @@ def generateQuestion():
     if operator == '+':
         answer = num1 + num2
     else:
-        # Ensure that the result is a positive number
+
         num1, num2 = max(num1, num2), min(num1, num2)
         answer = num1 - num2
 
@@ -81,6 +81,7 @@ def generateQuestion():
     return question, answer
 
 
+#grades conversion function
 def numberGradeToLetterGrade(grade):
     if grade >= 90:
         return 'A'
@@ -115,9 +116,9 @@ def runAiQuiz():
             print("Wrong Answer")
             question_list.append(f"{question}   Incorrect")
 
-    grade = numberGradeToLetterGrade((score / 50) * 100)
+    grade = numberGradeToLetterGrade(score)
 
-    print("\nNumber of correct questions:", score // 50)
+    print("\nNumber of correct questions:", score)
     print("Grade:", grade)
 
     print("\nAll Questions")
