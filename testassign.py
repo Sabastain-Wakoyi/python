@@ -33,8 +33,6 @@ def numberGradeToLetterGrade(grade):
 
 def runMathQuiz():
     score = 0
-    question_list = []
-    correct_list = []
 
     print("Welcome to the Math Quiz!")
 
@@ -43,32 +41,18 @@ def runMathQuiz():
         user_answer = int(input(question))
 
         if user_answer == answer:
-            print("Good job")
+            print("Correct!")
             if '+' in question:
                 score += 5
             else:
                 score += 10
-            correct_list.append("Correct")
         else:
-            print("Wrong Answer")
-            correct_list.append("Incorrect")
-
-        question_list.append(f"{question}          {correct_list[-1]}")
+            print(f"Incorrect! The correct answer is {answer}.")
 
     grade = numberGradeToLetterGrade((score / 50) * 100)
 
-    print("\nNumber of correct questions:", score // 5)
-    print("Grade:", grade)
-
-    print("\nAll Questions")
-    for i in range(5):
-        print(question_list[i])
+    print(f"\nNumber of correct answers: {score // 5}")
+    print(f"Letter grade: {grade}")
 
 
 runMathQuiz()
-
-
-
-
-
-
