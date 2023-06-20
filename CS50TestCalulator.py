@@ -1,4 +1,5 @@
 # from CS50Calculator import square
+import pytest
 
 # unit test are typically tests for functions that the programmer has written
 # the simple test to use is pytest
@@ -27,6 +28,7 @@
 # if __name__ == "_main_":
 #     main()
 
+import pytest
 
 from CS50Calculator import square
 
@@ -43,3 +45,8 @@ def test_negative():
 
 def test_zero():
     assert square(0) == 0
+
+
+def test_str():
+    with pytest.raises(TypeError):
+        square("cat")
