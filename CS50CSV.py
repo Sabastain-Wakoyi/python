@@ -29,10 +29,10 @@
 #     for line in file:
 #         name, house = line.rstrip().split(",")
 #         student = {"name": name, "house": house}
-        # student = {}
-        # student["name"] = name
-        # student["house"] = house
-        #students.append(student)
+# student = {}
+# student["name"] = name
+# student["house"] = house
+# students.append(student)
 
 
 # def get_name(student):
@@ -41,7 +41,6 @@
 #
 # for student in sorted(students, key=get_name, reverse=True):
 #     print(f"{student['name']} is in {student['house']}")
-
 
 
 # using lambda
@@ -65,12 +64,11 @@ import csv
 students = []
 
 with open("students.csv") as file:
-     # = csv.reader(file)
+    # = csv.reader(file)
     reader = csv.DictReader(file)
     for row in reader:
-        students.append({"name": row[0], "house": row[1]})
-
-
+        # students.append({"name": row[0], "house": row[1]})
+        students.append({"name": row["name"], "house": row["house"]})
 
 for student in sorted(students, key=lambda student: student["name"]):
     print(f"{student['name']} is in {student['house']}")
